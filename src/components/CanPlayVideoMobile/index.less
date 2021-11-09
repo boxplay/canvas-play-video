@@ -1,0 +1,53 @@
+.cpvm_canvasContainer{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  #cpvm_videoCan{
+      display: block !important;
+  }
+  .cpvm_controlTool{
+    position: absolute;
+    bottom: 0px;
+    height: 30px;
+    background: rgba(0,0,0,0.6);
+    left:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    .cpvm_smallPlayButton{
+      margin-left: 10px !important;
+    }
+    .cpvm_mutedButton,.cpvm_smallPlayButton{
+      width: 25px;
+      height: 20px;
+      // background: white;
+      margin-left: 10px;
+      font-size: 13px;
+      text-align: center;
+      line-height: 20px;
+    }
+  }
+  
+  .cpvm_playVuttonMask{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background: rgba(0,0,0,0.6);
+    top:0;
+    left:0;
+    .cpvm_playButton{
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top:83px;
+      left:calc((100% - 40px) / 2);
+      // background:white;
+      z-index:2;
+      color:black;
+      text-align: center;
+      line-height: 40px;
+      font-size: 16px;
+    }
+  }
+}
